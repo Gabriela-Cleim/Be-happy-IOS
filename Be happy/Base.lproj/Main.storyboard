@@ -10,7 +10,7 @@
         <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Be_happy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Be_happy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,13 +39,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKT-PQ-PNo">
                                 <rect key="frame" x="105" y="580" width="218" height="36"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="login">
+                                <buttonConfiguration key="configuration" style="plain" title="Login">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" red="0.88736976096124365" green="0.79620196722120318" blue="0.38158842004100757" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6L8-0D-JsX"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="12U-Fh-pU1">
                                 <rect key="frame" x="46.666666666666657" y="138" width="335" height="261"/>
@@ -75,6 +78,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="uZH-Bc-nxM"/>
+                    <connections>
+                        <outlet property="campoEmail" destination="AcH-ah-7MU" id="rpg-0s-k32"/>
+                        <outlet property="campoSenha" destination="DE3-qU-na5" id="Iz7-s7-nFT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -83,7 +90,7 @@
         <!--Cadastro-->
         <scene sceneID="rDs-tQ-d0l">
             <objects>
-                <viewController id="PG1-q0-ZGu" sceneMemberID="viewController">
+                <viewController id="PG1-q0-ZGu" customClass="CadastroViewController" customModule="Be_happy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H3i-mg-tkw">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,13 +114,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9H-Mb-yAA">
                                 <rect key="frame" x="105" y="609" width="218" height="36"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="login">
+                                <buttonConfiguration key="configuration" style="plain" title="Cadastrar">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" red="0.88736976099999998" green="0.79620196720000003" blue="0.38158841999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="cadastrar:" destination="PG1-q0-ZGu" eventType="touchUpInside" id="dw5-Tk-Mst"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uYu-fb-CUH">
                                 <rect key="frame" x="50" y="543" width="328" height="34"/>
@@ -142,10 +152,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Cadastro" id="KhJ-jJ-jKB"/>
+                    <connections>
+                        <outlet property="campoEmail" destination="vQ3-Ti-PKx" id="dDP-k1-cCb"/>
+                        <outlet property="campoNome" destination="tre-Of-3qL" id="GY0-wP-x8a"/>
+                        <outlet property="campoSenha" destination="uYu-fb-CUH" id="1lT-Ta-IRk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d9v-gv-z0d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1564.4859813084111" y="79.697624190064801"/>
+            <point key="canvasLocation" x="918" y="845"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oZj-ON-2jO">
