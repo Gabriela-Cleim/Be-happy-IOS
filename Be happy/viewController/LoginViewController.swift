@@ -20,7 +20,21 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         auth = Auth.auth()
+        
+        auth.addStateDidChangeListener { (autenticacao, usuario) in
+            if usuario != nil {
+                self.performSegue(withIdentifier: "LoginAuto", sender: nil)
+            }else{
+                print("Usuario nao logado")
+            }
     }
+    }
+    
+    @IBAction func unwindToLogin(unwindSegue: UIStoryboard) {
+        
+    }
+    
+    
     
     @IBAction func login(_ sender: Any) {
         
