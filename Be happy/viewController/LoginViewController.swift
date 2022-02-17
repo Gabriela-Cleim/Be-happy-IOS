@@ -32,6 +32,11 @@ class LoginViewController: UIViewController {
     
     @IBAction func unwindToLogin(unwindSegue: UIStoryboard) {
         
+        do {
+            try auth.signOut()
+        } catch {
+            print("Erro ao deslogar")
+        }
     }
     
     

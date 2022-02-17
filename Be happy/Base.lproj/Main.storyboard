@@ -209,7 +209,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Perfil" id="P3g-3v-xmx">
-                        <barButtonItem key="rightBarButtonItem" title="Logout" id="A0q-Rh-ehf">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="jPc-jQ-rVw">
                             <color key="tintColor" systemColor="systemRedColor"/>
                         </barButtonItem>
                     </navigationItem>
