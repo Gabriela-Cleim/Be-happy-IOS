@@ -18,6 +18,7 @@
 		7749742D27BC881E00D47F9D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7749742C27BC881E00D47F9D /* GoogleService-Info.plist */; };
 		77B741F627BDCC0500D3C54E /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B741F527BDCC0500D3C54E /* PerfilViewController.swift */; };
 		77B741F827BDCC1800D3C54E /* UsuariosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B741F727BDCC1800D3C54E /* UsuariosViewController.swift */; };
+		77ED159727BE879A00E8F1F1 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ED159627BE879A00E8F1F1 /* PostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		7749742C27BC881E00D47F9D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		77B741F527BDCC0500D3C54E /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		77B741F727BDCC1800D3C54E /* UsuariosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuariosViewController.swift; sourceTree = "<group>"; };
+		77ED159627BE879A00E8F1F1 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		B814B3EBAF39DEF1D0C5E41A /* Pods_Be_happy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Be_happy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -98,6 +100,7 @@
 			children = (
 				77B741F527BDCC0500D3C54E /* PerfilViewController.swift */,
 				77B741F727BDCC1800D3C54E /* UsuariosViewController.swift */,
+				77ED159627BE879A00E8F1F1 /* PostViewController.swift */,
 			);
 			path = abas;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			files = (
 				772DD28527BD41C500557D04 /* LoginViewController.swift in Sources */,
 				77B741F827BDCC1800D3C54E /* UsuariosViewController.swift in Sources */,
+				77ED159727BE879A00E8F1F1 /* PostViewController.swift in Sources */,
 				7749741927BC870400D47F9D /* AppDelegate.swift in Sources */,
 				7749741B27BC870400D47F9D /* SceneDelegate.swift in Sources */,
 				772DD28727BD41EF00557D04 /* CadastroViewController.swift in Sources */,
