@@ -187,7 +187,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="5rU-GM-qhd"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.87058823529999996" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Usuarios" id="cmr-7h-Fjo"/>
                 </viewController>
@@ -202,8 +202,61 @@
                     <view key="view" contentMode="scaleToFill" id="b2B-wQ-Fkd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bo0-Ka-p1J">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celPostagens" rowHeight="311" id="hOF-g6-7bQ" customClass="PostsTableViewCell" customModule="Be_happy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="311"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hOF-g6-7bQ" id="FRz-08-MSY">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="311"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="SF1-eN-Xtj">
+                                                    <rect key="frame" x="20" y="19" width="374" height="257"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="257" id="UP3-zm-tSM"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição do post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUS-xG-wyg">
+                                                    <rect key="frame" x="20" y="284" width="374" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="AUS-xG-wyg" firstAttribute="leading" secondItem="FRz-08-MSY" secondAttribute="leadingMargin" id="1Ib-YJ-Q9T"/>
+                                                <constraint firstItem="SF1-eN-Xtj" firstAttribute="top" secondItem="FRz-08-MSY" secondAttribute="topMargin" constant="8" id="5lh-eA-2ef"/>
+                                                <constraint firstItem="AUS-xG-wyg" firstAttribute="bottom" secondItem="FRz-08-MSY" secondAttribute="bottomMargin" constant="8" id="Cv6-Uw-cfE"/>
+                                                <constraint firstItem="SF1-eN-Xtj" firstAttribute="leading" secondItem="FRz-08-MSY" secondAttribute="leadingMargin" id="VAr-Nk-f21"/>
+                                                <constraint firstItem="AUS-xG-wyg" firstAttribute="top" secondItem="SF1-eN-Xtj" secondAttribute="bottom" constant="8" id="hQl-xK-Ydh"/>
+                                                <constraint firstItem="AUS-xG-wyg" firstAttribute="top" secondItem="SF1-eN-Xtj" secondAttribute="bottom" constant="8" id="puW-jS-vrB"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="AUS-xG-wyg" secondAttribute="trailing" id="sx3-EW-M3J"/>
+                                                <constraint firstItem="SF1-eN-Xtj" firstAttribute="trailing" secondItem="FRz-08-MSY" secondAttribute="trailingMargin" id="zLi-e3-FCn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descricao" destination="AUS-xG-wyg" id="usd-GG-8am"/>
+                                            <outlet property="postagem" destination="SF1-eN-Xtj" id="eWU-yi-Vqa"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="XyZ-x0-6ym" id="LeW-H5-65G"/>
+                                    <outlet property="delegate" destination="XyZ-x0-6ym" id="iKx-C3-9OR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ahq-Cj-Qhv"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.87058823529999996" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bo0-Ka-p1J" firstAttribute="trailing" secondItem="ahq-Cj-Qhv" secondAttribute="trailing" id="Zkh-X1-tcD"/>
+                            <constraint firstItem="Bo0-Ka-p1J" firstAttribute="top" secondItem="ahq-Cj-Qhv" secondAttribute="top" id="d4w-J1-x96"/>
+                            <constraint firstItem="Bo0-Ka-p1J" firstAttribute="leading" secondItem="ahq-Cj-Qhv" secondAttribute="leading" id="dv7-ve-Z3S"/>
+                            <constraint firstAttribute="bottom" secondItem="Bo0-Ka-p1J" secondAttribute="bottom" id="fOz-2I-sfJ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Perfil" id="P3g-3v-xmx">
                         <barButtonItem key="leftBarButtonItem" image="camera.fill" catalog="system" id="sN2-aD-haN">
@@ -211,7 +264,7 @@
                                 <segue destination="FYZ-eU-QdT" kind="show" id="NwP-zI-hRi"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="power.circle.fill" catalog="system" id="jPc-jQ-rVw">
+                        <barButtonItem key="rightBarButtonItem" title="logout" id="jPc-jQ-rVw">
                             <color key="tintColor" systemColor="systemRedColor"/>
                             <connections>
                                 <action selector="hh:" destination="CHl-gj-Zvw" id="nxV-9L-tEr"/>
@@ -219,11 +272,14 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableViewPosts" destination="Bo0-Ka-p1J" id="zne-mX-aBn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CaV-yi-HyE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="CHl-gj-Zvw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3515.8878504672894" y="-306.47948164146868"/>
+            <point key="canvasLocation" x="3514.4927536231885" y="-306.69642857142856"/>
         </scene>
         <!--Nova postagem-->
         <scene sceneID="jS4-Ij-MKd">
@@ -271,7 +327,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8dx-CP-7Yd"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.87058823529411766" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Y11-Fl-2td" firstAttribute="top" secondItem="hpU-TU-53A" secondAttribute="bottom" constant="40" id="50A-Xy-iKt"/>
                             <constraint firstItem="sfe-Dp-cNx" firstAttribute="centerX" secondItem="Msz-pT-eft" secondAttribute="centerX" id="BNb-BG-3Uv"/>
@@ -360,13 +416,9 @@
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="plus.app.fill" catalog="system" width="128" height="114"/>
-        <image name="power.circle.fill" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

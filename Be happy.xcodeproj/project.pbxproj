@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1BBC329A3B1597E718497353 /* Pods_Be_happy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B814B3EBAF39DEF1D0C5E41A /* Pods_Be_happy.framework */; };
+		770ECB9927BFDBC500FF5D61 /* PostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770ECB9827BFDBC500FF5D61 /* PostsTableViewCell.swift */; };
 		772DD28527BD41C500557D04 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772DD28427BD41C500557D04 /* LoginViewController.swift */; };
 		772DD28727BD41EF00557D04 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772DD28627BD41EF00557D04 /* CadastroViewController.swift */; };
 		7749741927BC870400D47F9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7749741827BC870400D47F9D /* AppDelegate.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		2CF47A9F2558DB9443104B7C /* Pods-Be happy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Be happy.debug.xcconfig"; path = "Target Support Files/Pods-Be happy/Pods-Be happy.debug.xcconfig"; sourceTree = "<group>"; };
 		6C648E5CE30CC71D7C5C964C /* Pods-Be happy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Be happy.release.xcconfig"; path = "Target Support Files/Pods-Be happy/Pods-Be happy.release.xcconfig"; sourceTree = "<group>"; };
+		770ECB9827BFDBC500FF5D61 /* PostsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewCell.swift; sourceTree = "<group>"; };
 		772DD28427BD41C500557D04 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		772DD28627BD41EF00557D04 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
 		7749741527BC870400D47F9D /* Be happy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Be happy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		770ECB9727BFDB8000FF5D61 /* tableViewcell */ = {
+			isa = PBXGroup;
+			children = (
+				770ECB9827BFDBC500FF5D61 /* PostsTableViewCell.swift */,
+			);
+			path = tableViewcell;
+			sourceTree = "<group>";
+		};
 		772DD28327BD415D00557D04 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +93,7 @@
 		7749741727BC870400D47F9D /* Be happy */ = {
 			isa = PBXGroup;
 			children = (
+				770ECB9727BFDB8000FF5D61 /* tableViewcell */,
 				772DD28327BD415D00557D04 /* viewController */,
 				7749741827BC870400D47F9D /* AppDelegate.swift */,
 				7749741A27BC870400D47F9D /* SceneDelegate.swift */,
@@ -245,6 +256,7 @@
 				7749741B27BC870400D47F9D /* SceneDelegate.swift in Sources */,
 				772DD28727BD41EF00557D04 /* CadastroViewController.swift in Sources */,
 				77B741F627BDCC0500D3C54E /* PerfilViewController.swift in Sources */,
+				770ECB9927BFDBC500FF5D61 /* PostsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
