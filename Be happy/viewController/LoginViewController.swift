@@ -10,7 +10,6 @@ import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
-    
     @IBOutlet weak var campoEmail: UITextField!
     @IBOutlet weak var campoSenha: UITextField!
     var auth: Auth!
@@ -28,16 +27,23 @@ class LoginViewController: UIViewController {
                 print("Usuario nao logado")
             }
     }
-    }
+}
     
-    @IBAction func unwindToLogin(unwindSegue: UIStoryboard) {
-        
+    
+    
+    
+    
+    @IBAction func unwind( sender: UIStoryboardSegue){
         do {
             try auth.signOut()
         } catch {
             print("Erro ao deslogar")
         }
     }
+    
+    
+    
+    
     
     
     
@@ -53,37 +59,11 @@ class LoginViewController: UIViewController {
                     }
                 }
             }else{
-                
-                let alert: UIAlertController = UIAlertController(title: "Alerta", message: "Preencha a sua senha", preferredStyle: .alert)
-                
-                
-                let action1: UIAlertAction = UIAlertAction(title: "OK", style: .default) {
-                    (action) in
-                    
-                    print("vc clicou no ok")
-                }
-                alert.addAction(action1)
-                
-                self.present(alert, animated: true, completion: nil)
-                
+                print("2")
             }
-            
-            
-            
+
         }else{
-            
-            let alert: UIAlertController = UIAlertController(title: "Alerta", message: "Preencha o seu email", preferredStyle: .alert)
-            
-            
-            let action1: UIAlertAction = UIAlertAction(title: "OK", style: .default) {
-                (action) in
-                
-                print("vc clicou no ok")
-            }
-            alert.addAction(action1)
-            
-            self.present(alert, animated: true, completion: nil)
-            
+            print("1")
         }
             
             
@@ -94,5 +74,7 @@ class LoginViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
-
+    
+    
+    
 }

@@ -75,6 +75,14 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
                                     self.firestore.collection("postagens")
                                         .document(idUsuario)
                                         .collection("postagens_usuarios")
+                                        .addDocument(data: [
+                                            "descricao": descricao, "url": urlImagem
+                                        ]) {(erro) in
+                                            if erro == nil {
+                                                self.navigationController?
+                                                    .popViewController(animated: true)
+                                            }
+                                        }
                                 }
                             }
                             

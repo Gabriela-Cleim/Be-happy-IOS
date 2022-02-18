@@ -214,12 +214,17 @@
                                 <segue destination="FYZ-eU-QdT" kind="show" id="NwP-zI-hRi"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Logout" id="jPc-jQ-rVw">
+                        <barButtonItem key="rightBarButtonItem" title="sair" id="jPc-jQ-rVw">
                             <color key="tintColor" systemColor="systemRedColor"/>
+                            <connections>
+                                <action selector="hh:" destination="CHl-gj-Zvw" id="nxV-9L-tEr"/>
+                                <segue destination="CHl-gj-Zvw" kind="unwind" unwindAction="unwindWithSender:" id="wf1-s5-OL5"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CaV-yi-HyE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="CHl-gj-Zvw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3515.8878504672894" y="-306.47948164146868"/>
         </scene>
