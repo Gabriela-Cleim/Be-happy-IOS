@@ -8,6 +8,11 @@
 import UIKit
 import FirebaseFirestore
 import FirebaseAuth
+import FirebaseStorageUI
+
+
+
+
 
 
 class PerfilViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -79,9 +84,12 @@ class PerfilViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let posts = self.post[indice]
         
         let descricao = posts["descricao"] as? String
+        if let url = posts["url"] as? String {
+            celula.postagem.sd_setImage(with: URL(string: url), completed: nil)
+        }
         
         celula.descricao.text = descricao
-        celula.postagem.image = UIImage(named: "padrao")
+        //celula.postagem.image = UIImage(named: "padrao")
         return celula
     }
 }
