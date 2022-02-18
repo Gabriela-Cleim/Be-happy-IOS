@@ -30,7 +30,7 @@ class LoginViewController: UIViewController {
 }
     
    
-    
+    //inicio do cod do alert
     @IBAction func help(_ sender: UIButton) {
         showAlert()
     }
@@ -46,6 +46,8 @@ class LoginViewController: UIViewController {
     func showActionsheet() {
         
     }
+    
+    //fim do cod do alert
     
     
    //botao para deslogar usuario
