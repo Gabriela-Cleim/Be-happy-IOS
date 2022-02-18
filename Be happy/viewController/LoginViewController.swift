@@ -17,9 +17,9 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         auth = Auth.auth()
         
+        //identificar se o usuario esta logado
         auth.addStateDidChangeListener { (autenticacao, usuario) in
             if usuario != nil {
                 self.performSegue(withIdentifier: "LoginAuto", sender: nil)
@@ -29,10 +29,26 @@ class LoginViewController: UIViewController {
     }
 }
     
+   
+    
+    @IBAction func help(_ sender: UIButton) {
+        showAlert()
+    }
+    
+    func showAlert() {
+        let alert = UIAlertController(title: "Help", message: "Acesse o site: 9MeninasSuperPoderosaeumSegredo e crie um ticket.", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Obrigado", style: .default, handler: { action in print("apertou Obrigada")}))
+        
+        present(alert, animated: true)
+    }
+    
+    func showActionsheet() {
+        
+    }
     
     
-    
-    
+   //botao para deslogar usuario
     @IBAction func unwind( sender: UIStoryboardSegue){
         do {
             try auth.signOut()
@@ -48,7 +64,6 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func login(_ sender: Any) {
-        
         if let email = campoEmail.text {
             if let senha = campoSenha.text {
                 auth.signIn(withEmail: email, password: senha) { (usuario, erro) in
@@ -65,16 +80,9 @@ class LoginViewController: UIViewController {
         }else{
             print("1")
         }
-            
-            
-            
-    
     }
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
-    
-    
-    
 }

@@ -16,18 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AcH-ah-7MU">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AcH-ah-7MU">
                                 <rect key="frame" x="50" y="454" width="314" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DE3-qU-na5">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DE3-qU-na5">
                                 <rect key="frame" x="50" y="503" width="314" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uY-r1-WGM">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uY-r1-WGM">
                                 <rect key="frame" x="50" y="625" width="314" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Não tem conta? cadastre-se">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
@@ -37,8 +40,9 @@
                                     <segue destination="PG1-q0-ZGu" kind="show" id="TGQ-b6-65j"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKT-PQ-PNo">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKT-PQ-PNo">
                                 <rect key="frame" x="105" y="580" width="204" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login">
                                     <backgroundConfiguration key="background">
@@ -51,32 +55,25 @@
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6L8-0D-JsX"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="12U-Fh-pU1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="12U-Fh-pU1">
                                 <rect key="frame" x="39.5" y="138" width="335" height="261"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="335" id="Wnw-7N-Hoi"/>
-                                    <constraint firstAttribute="height" constant="261" id="h9T-EF-FWI"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7o-Vm-Lrz">
+                                <rect key="frame" x="332" y="824" width="62" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="help">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="help:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7HG-9b-fCQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="0.87058823529411766" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="3uY-r1-WGM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="0At-aD-7Lj"/>
-                            <constraint firstItem="DE3-qU-na5" firstAttribute="top" secondItem="AcH-ah-7MU" secondAttribute="bottom" constant="15" id="4km-lz-b29"/>
-                            <constraint firstItem="12U-Fh-pU1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Esc-qF-j6G"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3uY-r1-WGM" secondAttribute="trailing" constant="50" id="PQK-zx-BfR"/>
-                            <constraint firstItem="3uY-r1-WGM" firstAttribute="top" secondItem="oKT-PQ-PNo" secondAttribute="bottom" constant="9" id="TGG-T7-4MS"/>
-                            <constraint firstItem="DE3-qU-na5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="WAO-TW-esW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DE3-qU-na5" secondAttribute="trailing" constant="50" id="WsW-lx-Wdv"/>
-                            <constraint firstItem="AcH-ah-7MU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="XED-kI-VSs"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oKT-PQ-PNo" secondAttribute="trailing" constant="105" id="YEU-mF-dQs"/>
-                            <constraint firstItem="12U-Fh-pU1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="YpM-rn-TI2"/>
-                            <constraint firstItem="oKT-PQ-PNo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="dzK-Vb-DQb"/>
-                            <constraint firstItem="AcH-ah-7MU" firstAttribute="top" secondItem="12U-Fh-pU1" secondAttribute="bottom" constant="55" id="eva-dc-X3o"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AcH-ah-7MU" secondAttribute="trailing" constant="50" id="pT1-wn-m2B"/>
-                            <constraint firstItem="oKT-PQ-PNo" firstAttribute="top" secondItem="DE3-qU-na5" secondAttribute="bottom" constant="43" id="zHd-sX-E4D"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="uZH-Bc-nxM"/>
                     <connections>
@@ -209,12 +206,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Perfil" id="P3g-3v-xmx">
-                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="sN2-aD-haN">
+                        <barButtonItem key="leftBarButtonItem" image="camera.fill" catalog="system" id="sN2-aD-haN">
                             <connections>
                                 <segue destination="FYZ-eU-QdT" kind="show" id="NwP-zI-hRi"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="sair" id="jPc-jQ-rVw">
+                        <barButtonItem key="rightBarButtonItem" image="power.circle.fill" catalog="system" id="jPc-jQ-rVw">
                             <color key="tintColor" systemColor="systemRedColor"/>
                             <connections>
                                 <action selector="hh:" destination="CHl-gj-Zvw" id="nxV-9L-tEr"/>
@@ -357,11 +354,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="download" width="302" height="167"/>
         <image name="logo" width="1079" height="803"/>
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="plus.app.fill" catalog="system" width="128" height="114"/>
+        <image name="power.circle.fill" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
