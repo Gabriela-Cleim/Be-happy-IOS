@@ -14,7 +14,7 @@ class UsuariosViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var tableViewUser: UITableView!
     @IBOutlet weak var searchBarUser: UISearchBar!
     
-    var firestore: Firestore
+    var firestore: Firestore!
     var usuarios: [Dictionary<String, Any>] = []
     
     
@@ -35,7 +35,7 @@ class UsuariosViewController: UIViewController, UITableViewDelegate, UITableView
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let celula = tableView.dequeueReusableCell (withIdentifier: "celulaPosts", for: indexPath)
+        let celula = tableView.dequeueReusableCell (withIdentifier: "celPostagens", for: indexPath)
         
         celula.textLabel?.text = "Nome"
         celula.detailTextLabel?.text = "email"
