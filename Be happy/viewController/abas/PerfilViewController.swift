@@ -42,6 +42,70 @@ class PerfilViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
+    //inicio do cod do alert do heart
+    @IBAction func heart(_ sender: Any) {
+        showAlert()
+    }
+        func showAlert() {
+            let alert = UIAlertController(title: "Heart", message: "Fico feliz que voce gostou desse post.", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "Heart", style: .default, handler: { action in print("apertou Heart")}))
+            
+            present(alert, animated: true)
+        }
+        
+        func showActionsheet() {
+            
+}
+    //fim do cod
+    
+    //inicio do cod do alert do share
+
+    @IBAction func share(_ sender: Any) {
+        shareAlert()
+    }
+    
+    func shareAlert() {
+        let alert = UIAlertController(title: "Share", message: "Que bom que voce queria compartilhar esse post.", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Share", style: .default, handler: { action in print("apertou Share")}))
+        
+        present(alert, animated: true)
+    }
+    
+    func showActionShare() {
+        
+}
+    //fim do cod
+    
+    
+    //inicio do cod do alert do smile
+   
+    @IBAction func smile(_ sender: Any) {
+        smileAlert()
+    }
+    func smileAlert() {
+        let alert = UIAlertController(title: "Smile", message: "Fico muito muito feliz que esse post fez voce sorrir.", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Smile", style: .default, handler: { action in print("apertou Smile")}))
+        
+        present(alert, animated: true)
+    }
+    
+    func showActionSmile() {
+        
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     override func viewDidAppear(_ animated: Bool) {
         recuperarPosts()
     }

@@ -191,21 +191,13 @@
                                 <rect key="frame" x="0.0" y="80" width="414" height="51"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="no user yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClO-xR-gk8">
-                                <rect key="frame" x="118.5" y="425" width="177.5" height="46"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5rU-GM-qhd"/>
                         <color key="backgroundColor" red="1" green="0.87058823529999996" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ClO-xR-gk8" firstAttribute="centerY" secondItem="CXN-f1-459" secondAttribute="centerY" id="Rsh-JS-71M"/>
                             <constraint firstItem="pnR-LH-P6V" firstAttribute="top" secondItem="CXN-f1-459" secondAttribute="top" constant="80" id="bcM-SZ-IPJ"/>
                             <constraint firstItem="pnR-LH-P6V" firstAttribute="trailing" secondItem="5rU-GM-qhd" secondAttribute="trailing" id="c2s-Ej-IKf"/>
                             <constraint firstItem="pnR-LH-P6V" firstAttribute="leading" secondItem="5rU-GM-qhd" secondAttribute="leading" id="qZI-4p-6Yo"/>
-                            <constraint firstItem="ClO-xR-gk8" firstAttribute="centerX" secondItem="CXN-f1-459" secondAttribute="centerX" id="ym8-Qu-8tI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Users" id="cmr-7h-Fjo"/>
@@ -217,30 +209,45 @@
             </objects>
             <point key="canvasLocation" x="4424.6376811594209" y="372.32142857142856"/>
         </scene>
-        <!--Cadastro View Controller-->
+        <!--ChatBot-->
         <scene sceneID="rlE-0K-a3Z">
             <objects>
-                <viewController id="k4E-XM-LHq" customClass="CadastroViewController" customModule="Be_happy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="k4E-XM-LHq" customClass="ChatBotViewController" customModule="Be_happy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wS8-gk-TPd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fo4-eS-hwx">
-                                <rect key="frame" x="199" y="250" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rrP-Hq-oAD">
+                                <rect key="frame" x="20" y="759" width="317" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPw-uk-mU0">
+                                <rect key="frame" x="345" y="759" width="47" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="paperplane.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="send:" destination="k4E-XM-LHq" eventType="touchUpInside" id="J61-bA-Sam"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="A46-O9-Ds2"/>
                         <color key="backgroundColor" red="1" green="0.87058823529999996" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
+                        <constraints>
+                            <constraint firstItem="rrP-Hq-oAD" firstAttribute="leading" secondItem="A46-O9-Ds2" secondAttribute="leading" constant="20" id="8Do-Jf-YsZ"/>
+                            <constraint firstItem="QPw-uk-mU0" firstAttribute="leading" secondItem="rrP-Hq-oAD" secondAttribute="trailing" constant="8" id="AYU-LP-LpV"/>
+                            <constraint firstItem="A46-O9-Ds2" firstAttribute="trailing" secondItem="rrP-Hq-oAD" secondAttribute="trailing" constant="77" id="CCN-gg-roc"/>
+                            <constraint firstItem="A46-O9-Ds2" firstAttribute="bottom" secondItem="QPw-uk-mU0" secondAttribute="bottom" constant="20" id="Qwc-b3-rcv"/>
+                            <constraint firstItem="A46-O9-Ds2" firstAttribute="bottom" secondItem="rrP-Hq-oAD" secondAttribute="bottom" constant="20" id="WRa-fa-hwn"/>
+                            <constraint firstItem="A46-O9-Ds2" firstAttribute="trailing" secondItem="QPw-uk-mU0" secondAttribute="trailing" constant="22" id="cYl-a8-WTv"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="djm-2M-yA9"/>
+                    <navigationItem key="navigationItem" title="ChatBot" id="djm-2M-yA9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PGM-FM-0FT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2372" y="844"/>
+            <point key="canvasLocation" x="2371.0144927536235" y="843.75"/>
         </scene>
         <!--Profile-->
         <scene sceneID="BMC-CL-S47">
@@ -276,6 +283,9 @@
                                                     <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system">
                                                         <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                                     </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="heart:" destination="XyZ-x0-6ym" eventType="touchUpInside" id="TrV-ZP-6RD"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sb-sv-5ML">
                                                     <rect key="frame" x="94" y="320" width="45" height="31"/>
@@ -283,6 +293,9 @@
                                                     <buttonConfiguration key="configuration" style="plain" image="smiley" catalog="system">
                                                         <color key="baseForegroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="smile:" destination="XyZ-x0-6ym" eventType="touchUpInside" id="XMV-Rc-OxO"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucG-Pd-mX4">
                                                     <rect key="frame" x="60" y="320" width="45" height="31"/>
@@ -290,6 +303,9 @@
                                                     <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.right.circle" catalog="system">
                                                         <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="share:" destination="XyZ-x0-6ym" eventType="touchUpInside" id="SuW-GO-E7f"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -532,9 +548,10 @@
         <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="download" width="302" height="167"/>
         <image name="heart" catalog="system" width="128" height="109"/>
-        <image name="logo" width="1079" height="803"/>
+        <image name="logo" width="539.5" height="401.5"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="message.fill" catalog="system" width="128" height="113"/>
+        <image name="paperplane.fill" catalog="system" width="128" height="118"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="plus.app.fill" catalog="system" width="128" height="114"/>
         <image name="smiley" catalog="system" width="128" height="121"/>
