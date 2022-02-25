@@ -24,7 +24,7 @@ class UsuariosViewController: UIViewController, UITableViewDelegate, UITableView
         firestore = Firestore.firestore()
     }
     
-    //inicio do cod do alert do heart
+    //inicio do cod do alert do search
     @IBAction func search(_ sender: Any) {
         searchAlert()
     }

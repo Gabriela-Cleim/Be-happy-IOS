@@ -49,55 +49,15 @@ class CadastroViewController: UIViewController {
                     }
                     
                 }else{
-                    
-                    let alert: UIAlertController = UIAlertController(title: "Alerta", message: "Preencha a sua senha", preferredStyle: .alert)
-                    
-                    
-                    let action1: UIAlertAction = UIAlertAction(title: "OK", style: .default) {
-                        (action) in
-                        
                         print("vc clicou no ok")
                     }
-                    alert.addAction(action1)
-                    
-                    self.present(alert, animated: true, completion: nil)
-                    
-                }
             }else{
-                
-                let alert: UIAlertController = UIAlertController(title: "Alerta", message: "Preencha o seu email", preferredStyle: .alert)
-                
-                
-                let action1: UIAlertAction = UIAlertAction(title: "OK", style: .default) {
-                    (action) in
-                    
                     print("vc clicou no ok")
                 }
-                alert.addAction(action1)
-                
-                self.present(alert, animated: true, completion: nil)
-                
-            }
         }else{
-            
-            let alert: UIAlertController = UIAlertController(title: "Alerta", message: "Preencha o seu nome", preferredStyle: .alert)
-            
-            
-            let action1: UIAlertAction = UIAlertAction(title: "OK", style: .default) {
-                (action) in
-                
                 print("vc clicou no ok")
             }
-            alert.addAction(action1)
-            
-            self.present(alert, animated: true, completion: nil)
-            
-        }
-        
     }
-    
-    
-    
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.setNavigationBarHidden(false, animated: true)

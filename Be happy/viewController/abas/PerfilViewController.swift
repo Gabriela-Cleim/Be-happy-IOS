@@ -60,7 +60,6 @@ class PerfilViewController: UIViewController, UITableViewDelegate, UITableViewDa
     //fim do cod
     
     //inicio do cod do alert do share
-
     @IBAction func share(_ sender: Any) {
         shareAlert()
     }
@@ -80,7 +79,6 @@ class PerfilViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     //inicio do cod do alert do smile
-   
     @IBAction func smile(_ sender: Any) {
         smileAlert()
     }
@@ -95,15 +93,6 @@ class PerfilViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func showActionSmile() {
         
 }
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     override func viewDidAppear(_ animated: Bool) {

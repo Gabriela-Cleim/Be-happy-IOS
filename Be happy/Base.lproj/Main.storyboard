@@ -523,11 +523,11 @@
             </objects>
             <point key="canvasLocation" x="3524.6376811594205" y="372.32142857142856"/>
         </scene>
-        <!--Message-->
+        <!--ChatBot-->
         <scene sceneID="qM5-CY-a3V">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IDP-4a-xnd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Message" image="message.fill" catalog="system" id="eXT-Li-fNg"/>
+                    <tabBarItem key="tabBarItem" title="ChatBot" image="message.fill" catalog="system" id="eXT-Li-fNg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FCi-4c-w3d">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
